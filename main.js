@@ -3,7 +3,6 @@ const app = new Vue({
   el:'#root',
   data:{
     emailArray:[],
-    isLoaded:false,
   },
   created(){
 
@@ -13,7 +12,6 @@ const app = new Vue({
     while(i<10){
       this.getAxios(this.emailArray)
       i++
-      if(this.emailArray.length>9) this.isLoaded=true
     }
     console.log(this.emailArray);
     
