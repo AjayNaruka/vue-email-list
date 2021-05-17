@@ -10,7 +10,7 @@
 <body>
 
   <div id="root">
-    <ul v-if='isLoaded'>
+    <ul v-if='emailArray.length>9'>
       <li v-for='email in emailArray'>{{email}}</li>
     </ul>
   </div>
